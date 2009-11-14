@@ -3,3 +3,5 @@ h1. The Small Sensor Publishing Engine.
 The Small Sensor Publishing Engine is a simple .Net based windows service that receives input from IronPython scripts (called SensorMonitors), routes them (via nMqtt) to an MQTT messaging broker. It also runs IronPython "Publishers" that take input from the core engine (data received via an MQTT broker through nMqtt) and does some processing with the data.
 
 The project was done as a simple engine to transmit data from a CC128 electricity monitor and publishing it online to Pachube (see http://markallanson.net/sensors). It is tolerant to errors in the IronPython scripts and has been happily pumping away a few messages per second since I created it back in May 2009 with no downtime (as of November 2009).
+
+This project is certainly not a formal production ready system, but might be useful for people that want to do simple pub/sub using IronPython on the fringes.
